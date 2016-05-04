@@ -20,35 +20,29 @@
                 android:layout_gravity="center"
                 android:ellipsize="end"
                 android:gravity="center"
-                android:maxLines="2" 
-                android:textSize="20dp"/>
-
-    <com.syh.view.imageshow.ImageShowViewPager
-        android:id="@+id/image_pager"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
-
-    <ImageView
-        android:id="@+id/download"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="15.0dip"
-        android:layout_marginRight="15.0dip"
-        android:src="@drawable/ic_launcher" />
-
-
-            <ScrollView
+                android:maxLines="2"
+                android:textSize="20dp" />
+             <TextView
+                android:id="@+id/tv03"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:textSize="14dp" />
 
-                <TextView
-                    android:id="@+id/tv_02"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="16dp" />
-            </ScrollView>
+            <ImageView
+                android:id="@+id/imageview01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/tv_02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
         </LinearLayout>
     </ScrollView>
 

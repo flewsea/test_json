@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         Button btn02=(Button) findViewById(R.id.btn02);
         Button btn03=(Button) findViewById(R.id.btn03);
         Button btn04=(Button) findViewById(R.id.btn04);
-
+        Button btn05=(Button) findViewById(R.id.btn05);
         btn01.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -52,7 +52,20 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// TODO 自动生成的方法存根
 				Intent intent=new Intent();
-				 intent.putExtra("num", "454");
+				 intent.putExtra("num", "197");
+				 intent.putExtra("fenlei", "productx");
+				intent.setClass(MainActivity.this,five.class);
+				startActivity(intent);
+			}
+		});
+        btn05.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO 自动生成的方法存根
+				Intent intent=new Intent();
+				 intent.putExtra("num", "1");
+				 intent.putExtra("fenlei", "about");
 				intent.setClass(MainActivity.this,five.class);
 				startActivity(intent);
 			}
